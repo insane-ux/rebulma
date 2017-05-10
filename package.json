@@ -1,5 +1,5 @@
 {
-  "name": "react-components-starter",
+  "name": "rebulma",
   "version": "0.0.0",
   "description": "React components starter kit, use Storybook",
   "scripts": {
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/insane-ux/react-components-starter.git"
+    "url": "git+https://github.com/insane-ux/rebulma.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "git+https://github.com/insane-ux/react-components-starter.git/issues"
+    "url": "git+https://github.com/insane-ux/rebulma.git/issues"
   },
   "dependencies": {
     "classnames": "^2.2.5",

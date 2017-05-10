@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`With Snapshot Testing Icon with className 1`] = `
-<div
-  className="some"
+<span
+  className="icon some"
 >
-  Icon
-</div>
+  <i
+    className="fa fa-check"
+  />
+</span>
 `;

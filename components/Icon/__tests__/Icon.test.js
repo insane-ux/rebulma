@@ -10,16 +10,19 @@ import Icon from '../index'
 describe('With Enzyme', () => {
   it('Icon with className', () => {
     const input = shallow(
-      <Icon className="some" />,
+      <Icon name="fa-check" className="is-small" />,
     )
 
-    expect(input.find('.some').prop('className')).toEqual('some')
+    // The wrapper
+    expect(input.find('.is-small').prop('className')).toEqual('icon is-small')
+    // The Icon
+    expect(input.find('i').prop('className')).toEqual('fa fa-check')
   })
 })
 
 describe('With Snapshot Testing', () => {
   it('Icon with className', () => {
-    const component = renderer.create(<Icon className="some" />)
+    const component = renderer.create(<Icon name="fa-check" className="some" />)
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()
   })

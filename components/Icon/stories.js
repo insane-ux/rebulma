@@ -6,5 +6,11 @@ import Icon from './'
 
 storiesOf('Icon', module)
   .add('default', () => (
-    <Icon />
+    <Icon name="fa-check" />
+  ))
+  .add('small', () => (
+    <Icon className="is-small" name="fa-check" />
+  ))
+  .add('large', () => (
+    <Icon className="is-large" name="fa-check" />
   ))

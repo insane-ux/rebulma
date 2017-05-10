@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Input with className 1`] = `
+<p
+  className="control"
+>
+  <input
+    className="input is-small"
+    placeholder="Text input"
+    type="text"
+  />
+</p>
+`;
