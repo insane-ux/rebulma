@@ -19,7 +19,8 @@
     "url": "git+https://github.com/insane-ux/react-components-starter.git/issues"
   },
   "dependencies": {
-    "classnames": "^2.2.5"
+    "classnames": "^2.2.5",
+    "react-css-themr": "^2.0.0"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
