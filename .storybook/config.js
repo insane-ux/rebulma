@@ -10,6 +10,7 @@ function loadStories() {
   require('../components/Checkbox/stories.js')
   require('../components/Field/stories.js')
   require('../components/Button/stories.js')
+  require('../components/Table/stories.js')
 }
 
 configure(loadStories, module)
