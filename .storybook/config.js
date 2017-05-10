@@ -7,6 +7,7 @@ function loadStories() {
   require('../components/Label/stories.js')
   require('../components/Input/stories.js')
   require('../components/Select/stories.js')
+  require('../components/Checkbox/stories.js')
   require('../components/Field/stories.js')
 }
 

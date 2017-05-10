@@ -24,6 +24,11 @@ storiesOf('Input', module).add('all', () => (
       rightIcon="fa-pencil-square-o"
       theme={{ input: 'is-small', leftIcon: 'is-small' }}
     />
+    <Label>with color</Label>
+    <Input
+      rightIcon="fa-pencil-square-o"
+      theme={{ input: 'is-danger' }}
+    />
     <Label>with both icon</Label>
     <Input
       leftIcon="fa-pencil-square-o"
