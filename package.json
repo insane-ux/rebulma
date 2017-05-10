@@ -3,13 +3,16 @@
   "version": "0.0.0",
   "description": "React components starter kit, use Storybook",
   "scripts": {
+    "build": "NODE_ENV=production babel ./components --out-dir ./lib --ignore *.test.js,stories.js",
     "flow": "npm run lint && flow",
     "lint": "eslint .",
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "storybook": "start-storybook -p 9001",
+    "build-storybook": "NODE_ENV=storybook build-storybook -c .storybook -o storybook-build",
     "deploy-storybook": "storybook-to-ghpages"
   },
+  "main": "lib",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/insane-ux/rebulma.git"
