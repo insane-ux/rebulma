@@ -11,6 +11,8 @@ function loadStories() {
   require('../components/Field/stories.js')
   require('../components/Button/stories.js')
   require('../components/Table/stories.js')
+  require('../components/Menu/stories.js')
+  require('../components/TopNav/stories.js')
 }
 
 configure(loadStories, module)
