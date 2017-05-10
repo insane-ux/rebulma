@@ -12,19 +12,18 @@ export const defaultStyles = {
 const Select = ({
   theme,
   className,
-  disabled,
   options = [],
+  ...props
 }: {
   theme: { [key: string]: string },
   className?: string,
-  disabled?: boolean,
   options?: Array<{ label: string, value: string }>,
 }) => {
   const rootClassName = cn('control', className, theme.root)
   return (
     <p className={rootClassName}>
       <span className={cn('select', theme.select)}>
-        <select disabled={disabled}>
+        <select {...props}>
           {options.map(({ label, value }) => (
             <option key={value} value={value}>{label}</option>
           ))}
@@ -37,7 +36,6 @@ const Select = ({
 Select.defaultProps = {
   className: undefined,
   placeholder: undefined,
-  disabled: false,
   options: [],
 }
 

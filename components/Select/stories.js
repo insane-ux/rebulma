@@ -27,6 +27,9 @@ storiesOf('Select', module)
   .add('default', () => (
     <Select options={options} />
   ))
+  .add('disabled', () => (
+    <Select disabled options={options} />
+  ))
   .add('small', () => (
     <Select options={options} theme={{ select: 'is-small' }} />
   ))

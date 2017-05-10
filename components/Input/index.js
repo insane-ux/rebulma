@@ -17,6 +17,7 @@ const Input = ({
   className,
   leftIcon,
   rightIcon,
+  ...props
 }: {
   theme: { [key: string]: string },
   className?: string,
@@ -29,7 +30,11 @@ const Input = ({
   })
   return (
     <p className={rootClassName}>
-      <input className={cn('input', theme.input)} type="text" placeholder="Text input" />
+      <input
+        className={cn('input', theme.input)}
+        type="text"
+        {...props}
+      />
       {leftIcon && (
         <Icon
           name={leftIcon}

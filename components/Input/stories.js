@@ -2,25 +2,33 @@
 
 import React from 'react'
 import { storiesOf } from '@kadira/storybook'
+import Label from 'components/Label'
 import Input from './'
 
-storiesOf('Input', module)
-  .add('default', () => (
+storiesOf('Input', module).add('all', () => (
+  <div className="box">
+    <Label>default</Label>
     <Input />
-  ))
-  .add('small', () => (
+    <Label>small</Label>
     <Input theme={{ input: 'is-small' }} />
-  ))
-  .add('with left icon', () => (
-    <Input leftIcon="fa fa-pencil-square-o" theme={{ input: 'is-large' }} />
-  ))
-  .add('with right icon', () => (
-    <Input rightIcon="fa fa-pencil-square-o" theme={{ input: 'is-small', leftIcon: 'is-small' }} />
-  ))
-  .add('with both icon', () => (
+    <Label>loading</Label>
+    <Input className="is-loading" />
+    <Label>read only</Label>
+    <Input readOnly />
+    <Label>disabled</Label>
+    <Input disabled />
+    <Label>with left icon</Label>
+    <Input leftIcon="fa-pencil-square-o" theme={{ input: 'is-large' }} />
+    <Label>with right icon</Label>
     <Input
-      leftIcon="fa fa-pencil-square-o"
-      rightIcon="fa fa-check"
+      rightIcon="fa-pencil-square-o"
+      theme={{ input: 'is-small', leftIcon: 'is-small' }}
+    />
+    <Label>with both icon</Label>
+    <Input
+      leftIcon="fa-pencil-square-o"
+      rightIcon="fa-check"
       theme={{ leftIcon: 'is-small' }}
     />
-  ))
+  </div>
+))
