@@ -1,6 +1,6 @@
 {
   "name": "rebulma",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "React components starter kit, use Storybook",
   "scripts": {
     "build": "NODE_ENV=production babel ./components --out-dir ./lib --ignore *.test.js,stories.js",
