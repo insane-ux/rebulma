@@ -39,4 +39,4 @@ Select.defaultProps = {
   options: [],
 }
 
-export default themr('Select')(Select)
+export default themr('Select', defaultStyles)(Select)

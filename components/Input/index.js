@@ -57,4 +57,4 @@ Input.defaultProps = {
   rightIcon: undefined,
 }
 
-export default themr('Input')(Input)
+export default themr('Input', defaultStyles)(Input)
