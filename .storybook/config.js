@@ -4,6 +4,7 @@ import { configure } from '@kadira/storybook'
 
 function loadStories() {
   require('../components/Icon/stories.js')
+  require('../components/Box/stories.js')
   require('../components/Label/stories.js')
   require('../components/Input/stories.js')
   require('../components/Select/stories.js')

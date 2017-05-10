@@ -1,3 +1,4 @@
+export Box from './Box'
 export Checkbox from './Checkbox'
 export Field from './Field'
 export Icon from './Icon'
