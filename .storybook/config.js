@@ -9,6 +9,7 @@ function loadStories() {
   require('../components/Select/stories.js')
   require('../components/Checkbox/stories.js')
   require('../components/Field/stories.js')
+  require('../components/Button/stories.js')
 }
 
 configure(loadStories, module)
