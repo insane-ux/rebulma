@@ -20,6 +20,7 @@ function loadStories() {
   require('../components/Delete/stories.js')
   require('../components/Tag/stories.js')
   require('../components/Notification/stories.js')
+  require('../components/MultiTagEdit/stories.js')
 }
 
 configure(loadStories, module)
