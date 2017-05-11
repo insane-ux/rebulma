@@ -14,6 +14,12 @@ function loadStories() {
   require('../components/Table/stories.js')
   require('../components/Menu/stories.js')
   require('../components/TopNav/stories.js')
+  require('../components/Tabs/stories.js')
+  require('../components/Panel/stories.js')
+  require('../components/Modal/stories.js')
+  require('../components/Delete/stories.js')
+  require('../components/Tag/stories.js')
+  require('../components/Notification/stories.js')
 }
 
 configure(loadStories, module)

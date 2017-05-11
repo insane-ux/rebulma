@@ -10,3 +10,14 @@ export Help from './Help'
 export Table from './Table'
 export Menu from './Menu'
 export TopNav from './TopNav'
+export Tabs from './Tabs'
+export {
+  Panel,
+  PanelHeading,
+  PanelBlock,
+  PanelTabs,
+} from './Panel'
+export Modal from './Modal'
+export Delete from './Delete'
+export Tag from './Tag'
+export Notification from './Notification'
