@@ -42,11 +42,11 @@ const MyTabs = withState('selected', 'select', 0)(
 storiesOf('Tabs', module)
   .add('default', () => (
     <div>
-      <h1>Default</h1>
+      <div className="heading">Default</div>
       <MyTabs />
-      <h1>Small & center</h1>
+      <div className="heading">Small & center</div>
       <MyTabs className="is-small is-centered" />
-      <h1>Toggled</h1>
+      <div className="heading">Toggled</div>
       <MyTabs className="is-toggle" />
     </div>
   ))

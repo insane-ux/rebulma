@@ -8,13 +8,13 @@ import Tag from './'
 storiesOf('Tag', module)
   .add('default', () => (
     <div>
-      <h1>Normal</h1>
+      <div className="heading">Normal</div>
       <Tag>Normal</Tag>
-      <h1>Small & Primary</h1>
+      <div className="heading">Small & Primary</div>
       <Tag className="is-small is-primary">Small</Tag>
-      <h1>Large</h1>
+      <div className="heading">Large</div>
       <Tag className="is-large">Large</Tag>
-      <h1>With Delete</h1>
+      <div className="heading">With Delete</div>
       <Tag
         className="is-danger"
       >

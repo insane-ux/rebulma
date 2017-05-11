@@ -7,11 +7,11 @@ import Delete from './'
 storiesOf('Delete', module)
   .add('default', () => (
     <div>
-      <h1>Normal</h1>
+      <div className="heading">Normal</div>
       <Delete onClick={action('click')} />
-      <h1>Small</h1>
+      <div className="heading">Small</div>
       <Delete onClick={action('click')} className="is-small" />
-      <h1>Large</h1>
+      <div className="heading">Large</div>
       <Delete onClick={action('click')} className="is-large" />
     </div>
   ))

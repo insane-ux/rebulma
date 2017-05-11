@@ -7,13 +7,20 @@ import Notification from './'
 storiesOf('Notification', module)
   .add('default', () => (
     <div style={{ width: 500 }}>
-      <h1>Default</h1>
+      <div className="heading">Default</div>
       <Notification className="is-info">
         Insert Successfully
       </Notification>
-      <h1>With Close</h1>
+      <div className="heading">With Close</div>
       <Notification
         className="is-info"
+        onClose={action('close')}
+      >
+        Insert Successfully
+      </Notification>
+      <div className="heading">With Animation</div>
+      <Notification
+        className="is-info animated slideInUp"
         onClose={action('close')}
       >
         Insert Successfully

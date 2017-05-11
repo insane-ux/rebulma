@@ -17,6 +17,7 @@ const MyModal = withState('isShow', 'setShow', false)(
     <div>
       <Button onClick={() => setShow(true)}>Open</Button>
       <Modal
+        theme={{ content: 'animated slideInUp' }}
         open={isShow}
         title="Hello Modal"
         onClose={() => setShow(false)}
@@ -29,6 +30,7 @@ const MyModal = withState('isShow', 'setShow', false)(
           {
             icon: 'fa-times',
             label: 'Cancel',
+            onClick: () => setShow(false),
           },
         ]}
       >
