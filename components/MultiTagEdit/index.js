@@ -50,8 +50,11 @@ const MultiTagEdit = ({
         onInputChange(e.target.value)
       }}
       onKeyDown={(e) => {
-        if (inputValue === '') return
-        if (e.key === ',' || e.key === 'Enter') {
+        if (inputValue === '' && e.key === ',') {
+          e.preventDefault()
+          return
+        }
+        if (inputValue !== '' && [',', 'Enter'].includes(e.key)) {
           if (value.includes(inputValue)) {
             e.preventDefault()
             // onDuplicate(inputValue)
